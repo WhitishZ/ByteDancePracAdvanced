@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:ByteDancePracAdvanced.ViewModels"
+             x:Class="ByteDancePracAdvanced.Views.PickNetworkStreamPage"
+             Title="Open a media from network">
+    <ContentPage.BindingContext>
+        <vm:PickNetworkStreamViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout  Padding="10, 20, 10, 0">
+            <StackLayout Orientation="Horizontal">
+                <Entry Text="{Binding MediaUri}" Placeholder="Please enter a network URL."
+                   HorizontalOptions="FillAndExpand" />
+                <Button Text="Play" Command="{Binding TestCommand}" Clicked="PlayButtonClicked"
+                        HorizontalOptions="End"/>
+            </StackLayout>
+            <Label Text="Example URLs:" />
+            <Label Text="http://www.example.com/stream.avi" />
+            <Label Text="rtp://@:1234" />
+            <Label Text="mms://mms.example.com/stream.asx" />
+            <Label Text="rtsp://server.example.org:8080/test.sdp" />
+            <Label Text="http://www.yourtube.com/watch?v=233" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

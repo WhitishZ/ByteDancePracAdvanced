@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:ByteDancePracAdvanced.ViewModels"
+             x:Class="ByteDancePracAdvanced.Views.PickFilePage"
+             Title="Open a media file and play">
+    <ContentPage.BindingContext>
+        <vm:PickFileViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Padding="0, 20, 0, 0">
+            <Button Text="Pick File" HorizontalOptions="CenterAndExpand" Command="{Binding PickFileCommand}" />
+            <Label Margin="10, 20, 10, 20" Text="{Binding HintMessage}" HorizontalOptions="Start" />
+            <Button Text="Play" IsEnabled="{Binding CanPlayVideo}" HorizontalOptions="Center" Clicked="PlayButtonClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

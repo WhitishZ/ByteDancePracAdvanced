@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:ByteDancePracAdvanced.ViewModels"
+             xmlns:vlc="clr-namespace:LibVLCSharp.Forms.Shared;assembly=LibVLCSharp.Forms"
+             x:Class="ByteDancePracAdvanced.Views.VideoPlayerPage"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False"
+             Appearing="OnAppearing"
+             Disappearing="OnDisappearing">
+    <ContentPage.BindingContext>
+        <vm:VideoPlayerViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <vlc:MediaPlayerElement MediaPlayer="{Binding MediaPlayer}" LibVLC="{Binding LibVLC}" EnableRendererDiscovery="True" />
+    </ContentPage.Content>
+</ContentPage>
