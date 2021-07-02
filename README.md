@@ -9,7 +9,7 @@ This project is developed with Microsoft Visual Studio Community 2019 using Xama
 
 This project depends on the following packages:
 
-For all solutions:
+For all three solutions:
 - [Xamarin.Essentials 1.6.1](https://www.nuget.org/packages/Xamarin.Essentials/1.6.1?_src=template)
 - [LibVLCSharp 3.5.0](https://www.nuget.org/packages/LibVLCSharp/3.5.0?_src=template)
 - [LibVLCSharp.Forms 3.5.0](https://www.nuget.org/packages/LibVLCSharp.Forms/3.5.0?_src=template)
