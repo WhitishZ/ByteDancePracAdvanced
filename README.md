@@ -13,9 +13,11 @@ For all solutions:
 - [Xamarin.Essentials 1.6.1](https://www.nuget.org/packages/Xamarin.Essentials/1.6.1?_src=template)
 - [LibVLCSharp 3.5.0](https://www.nuget.org/packages/LibVLCSharp/3.5.0?_src=template)
 - [LibVLCSharp.Forms 3.5.0](https://www.nuget.org/packages/LibVLCSharp.Forms/3.5.0?_src=template)
-ByteDancePracAdvanced.Android
+
+ByteDancePracAdvanced.Android:
 - [VideoLAN.LibVLC.Android 3.2.0](https://www.nuget.org/packages/VideoLAN.LibVLC.Android/3.2.0?_src=template)
-ByteDancePracAdvanced.iOS
+
+ByteDancePracAdvanced.iOS:
 - [VideoLAN.LibVLC.iOS 3.3.10](https://www.nuget.org/packages/VideoLAN.LibVLC.iOS/3.3.10?_src=template)
 
 ## Documentation
